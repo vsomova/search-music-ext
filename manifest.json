@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Search Music",
+  "version": "1.0",
+  "description": "Search the song mentioned on the page: just select the part you want to search across music platforms!",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "images/icon.png"
+  }
+}
