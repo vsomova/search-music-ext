@@ -5,8 +5,6 @@ body {
 #container {
     margin: auto;
     text-align: center;
-    /*min-width: 300px;*/
-    /*min-height: 400px;*/
     padding: 10px 10px 10px 10px;
     background-color: #150726;
     border: 5px solid transparent;
