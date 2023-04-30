@@ -19,6 +19,18 @@ function createPopup(selectedText) {
     popup.appendChild(listenOnApple(selectedText, 200))
     popup.appendChild(listenOnAmazon(selectedText, 200))
 
+    // further down we have a function for when the user clicks anywhere on the page, the popup
+    // disappears. however, we should make an exception for when clicked on the popup itself,
+    // therefore stop the event propagation so that it doesnt reach further to the document and
+    // the window doesnt close
+    popup.addEventListener('mousedown', function (event) {
+        event.stopPropagation();
+    });
+
+    popup.addEventListener('mouseup', function (event) {
+        event.stopPropagation();
+    });
+
     return popup;
 }
 
