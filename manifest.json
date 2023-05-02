@@ -3,9 +3,14 @@
   "name": "Search Music",
   "version": "1.0",
   "description": "Search the song mentioned on the page: just select the part you want to search across music platforms!",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "images/icon.png"
+    "default_popup": "index.html"
   },
   "permissions": ["activeTab", "clipboardWrite"],
   "content_scripts": [
