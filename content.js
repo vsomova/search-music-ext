@@ -7,12 +7,6 @@ function createPopup(selectedText) {
     popup.style.borderRadius = '6px'
     popup.style.padding = '0px 2px 2px 2px'
     popup.style.zIndex = '100' // make sure the window appears in front of everything else
-    // popup.style.backgroundImage = "linear-gradient(150deg, #8729cb, #402eaf 50%, #033570)"
-
-    // popup.style.border = "1px solid transparent"
-    // popup.style.borderImage = "linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%)"
-    // popup.style.borderImageSlice = "1"
-
 
     // create a button for copying the selected text
     const copyBtn = document.createElement("button")
@@ -20,7 +14,6 @@ function createPopup(selectedText) {
     copyBtn.innerText = 'Copy'
 
     // button styles
-    // copyBtn.style.backgroundImage = "linear-gradient(150deg, #8729cb, #402eaf 50%, #033570)"
     copyBtn.style.backgroundColor = "black"
     copyBtn.style.border = "1px solid white"
     copyBtn.style.borderRadius = "8px"
@@ -50,7 +43,6 @@ function createPopup(selectedText) {
     musicBtn.innerText = 'Search music'
 
     // button styles
-    // musicBtn.style.backgroundImage = "linear-gradient(150deg, #8729cb, #402eaf 50%, #033570)"
     musicBtn.style.backgroundColor = "black"
     musicBtn.style.border = "1px solid white"
     musicBtn.style.borderRadius = "8px"
