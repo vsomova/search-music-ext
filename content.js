@@ -11,15 +11,15 @@ function createPopup(selectedText) {
     // create a button for copying the selected text
     const copyBtn = document.createElement("button")
     copyBtn.id = "copy-btn"
-    copyBtn.innerText = 'Copy'
+    copyBtn.innerText = 'COPY'
 
     // button styles
     copyBtn.style.backgroundColor = "black"
-    copyBtn.style.border = "1px solid white"
     copyBtn.style.borderRadius = "8px"
     copyBtn.style.boxSizing = "border-box"
     copyBtn.style.color = "white"
-    copyBtn.style.fontFamily = "Phantomsans, sans-serif"
+    copyBtn.style.fontFamily = "Arial, sans-serif"
+    copyBtn.style.letterSpacing = "2px"
     copyBtn.style.fontSize = "10px"
     copyBtn.style.padding = "3px"
     copyBtn.style.cursor = "pointer"
@@ -28,7 +28,7 @@ function createPopup(selectedText) {
     copyBtn.addEventListener('click', async function() {
         try {
             await navigator.clipboard.writeText(selectedText);
-            copyBtn.innerText = 'Copied'
+            copyBtn.innerText = 'COPIED'
         } catch (err) {
             console.error('Failed to copy text to clipboard:', err);
         }
@@ -40,15 +40,15 @@ function createPopup(selectedText) {
     // create a button for searching the music with selected text
     const musicBtn = document.createElement("button")
     musicBtn.id = "music-btn"
-    musicBtn.innerText = 'Search music'
+    musicBtn.innerText = 'SEARCH MUSIC'
 
     // button styles
     musicBtn.style.backgroundColor = "black"
-    musicBtn.style.border = "1px solid white"
     musicBtn.style.borderRadius = "8px"
     musicBtn.style.boxSizing = "border-box"
     musicBtn.style.color = "white"
-    musicBtn.style.fontFamily = "Phantomsans, sans-serif"
+    musicBtn.style.fontFamily = "Arial, sans-serif"
+    musicBtn.style.letterSpacing = "2px"
     musicBtn.style.fontSize = "10px"
     musicBtn.style.padding = "3px"
     musicBtn.style.cursor = "pointer"
