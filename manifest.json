@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Search Music",
+  "name": "Song Searcher",
   "version": "1.0",
-  "description": "Search the song mentioned on the page: just select the part you want to search across music platforms!",
+  "description": "Our Chrome extension lets you easily search for songs mentioned on any webpage across multiple music platforms. Simply select the text containing the song's title, and our extension does the rest! Plus, for added convenience, we provide a copy button allowing you to quickly and easily copy song details for searching or sharing elsewhere.",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
